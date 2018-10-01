@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheClockExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgV-HR-OfO">
+                                <rect key="frame" x="37" y="20" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-wW-LSD">
+                                <rect key="frame" x="87" y="447" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZd-Xi-xb7">
+                                <rect key="frame" x="137" y="328" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32156862749999998" green="0.73333333329999995" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MgV-HR-OfO" firstAttribute="centerX" secondItem="PZd-Xi-xb7" secondAttribute="centerX" id="0pu-oG-6AT"/>
+                            <constraint firstAttribute="bottom" secondItem="O1B-wW-LSD" secondAttribute="bottom" constant="20" symbolic="YES" id="2Wd-Yi-hYA"/>
+                            <constraint firstItem="PZd-Xi-xb7" firstAttribute="centerX" secondItem="O1B-wW-LSD" secondAttribute="centerX" id="Cag-Zy-vtw"/>
+                            <constraint firstItem="PZd-Xi-xb7" firstAttribute="top" secondItem="MgV-HR-OfO" secondAttribute="bottom" constant="8" symbolic="YES" id="HHe-cp-eoJ"/>
+                            <constraint firstItem="MgV-HR-OfO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jbh-4f-YaB"/>
+                            <constraint firstItem="O1B-wW-LSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="NnU-9M-YxT"/>
+                            <constraint firstItem="MgV-HR-OfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="coZ-ub-TQu"/>
+                            <constraint firstItem="PZd-Xi-xb7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="328" id="k9o-LH-Lpz"/>
+                            <constraint firstItem="O1B-wW-LSD" firstAttribute="top" secondItem="PZd-Xi-xb7" secondAttribute="bottom" constant="19" id="lor-Bn-nqX"/>
+                            <constraint firstItem="PZd-Xi-xb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="pgF-XF-m3n"/>
+                            <constraint firstItem="O1B-wW-LSD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="447" id="q13-gW-05k"/>
+                            <constraint firstItem="MgV-HR-OfO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qGe-xo-z1N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myClockView" destination="MgV-HR-OfO" id="aYO-4v-Y65"/>
+                        <outlet property="myMediumClockView" destination="O1B-wW-LSD" id="oG6-cZ-V07"/>
+                        <outlet property="mySmallViewCOntroller" destination="PZd-Xi-xb7" id="4iJ-Ud-TdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
